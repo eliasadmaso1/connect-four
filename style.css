@@ -1,58 +1,79 @@
-
-body{
-    background-color: #336699;
+body {
+  background-color: #336699;
 }
 
-.grid{
+.grid {
+  border: solid 16px;
+  height: 480px;
+  width: 560px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30%;
+  border-radius: 34px;
+}
+
+.grid div {
+  height: 80px;
+  width: 80px;
+}
+
+.player-one {
+  background-color: #b30000;
+  border-radius: 50px;
+}
+
+.player-two {
+  background-color: #3333cc;
+  border-radius: 50px;
+}
+
+h3 {
+  font-family: monospace;
+}
+
+.game-board {
+  height: 87px;
+  width: 340px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #3333cc;
+  color: white;
+  border: solid 5px black;
+  border-radius: 35px;
+  margin-left: 37%;
+  margin-top: 29px;
+  margin-bottom: 30px;
+}
+h1 {
+  color: white;
+  font-family: monospace;
+  font-size: 35px;
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 500px) {
+  .grid {
     border: solid 16px;
-    height: 480px;
-    width: 560px;
+    height: 240px;
+    width: 280px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30%;
+    margin-left: 40%;
     border-radius: 34px;
-}
+    margin-left: 23px;
+  }
 
-.grid div{
-    height: 80px;
-    width: 80px;
-}
+  .grid div {
+    height: 40px;
+    width: 40px;
+  }
 
-.player-one{
-    background-color: 	 #b30000;
-    border-radius: 50px;
-}
-
-.player-two{
-    background-color:#3333cc;
-    border-radius: 50px;
-}
-
-h3{
-    font-family: monospace;
-}
-
-.game-board{
-    height: 87px;
-    width: 340px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background: #3333cc;
-    color: white;
-    border: solid 5px black;
-    border-radius: 35px;
-    margin-left: 37%;
-    margin-top: 29px;
-    margin-bottom: 30px;
-}
-h1{
-    color: white;
-    font-family: monospace;
-    font-size: 35px;
-    margin-left: 60px;
-
-
-
+  .game-board{
+      margin-left: 1%;
+  }
+  h1{
+      margin-left: 52px;
+  }
 }
